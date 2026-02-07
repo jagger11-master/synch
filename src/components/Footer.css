@@ -1,0 +1,90 @@
+.footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 3rem 0 1rem 0;
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+    color: #6366f1;
+    /* Indigo-500 */
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+}
+
+.about p {
+    line-height: 1.6;
+    color: #d1d5db;
+    margin-bottom: 1.5rem;
+}
+
+.socials {
+    display: flex;
+    gap: 1rem;
+}
+
+.socials a {
+    color: #d1d5db;
+    transition: color 0.3s ease;
+}
+
+.socials a:hover {
+    color: #6366f1;
+}
+
+.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links ul li {
+    margin-bottom: 0.75rem;
+}
+
+.links ul li a {
+    color: #d1d5db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.links ul li a:hover {
+    color: #6366f1;
+    padding-left: 5px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+    color: #d1d5db;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #333;
+    padding-top: 1.5rem;
+    margin-top: 2rem;
+    color: #9ca3af;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+}
