@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
+import AdminSignup from './pages/AdminSignup';
 import VerifyOTPPage from './pages/VerifyOTPPage';
 import ShopPage from './pages/ShopPage';
 import ProductDetailsPage from './pages/ProductDetailsPage';
@@ -47,6 +48,7 @@ function App() {
 
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignupPage />} />
+        <Route path="/admin-signup" element={<AdminSignup />} />
         <Route path="/verify-otp" element={<VerifyOTPPage />} />
 
         {/* Admin Routes */}
