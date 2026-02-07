@@ -102,6 +102,9 @@ const Signup = () => {
             <div style={{ marginTop: '1.5rem', textAlign: 'center', color: '#888' }}>
                 Already have an account? <Link to="/login" style={{ color: 'var(--red-primary)' }}>Login</Link>
             </div>
+            <div style={{ marginTop: '0.5rem', textAlign: 'center', fontSize: '0.9rem' }}>
+                <Link to="/admin-signup" style={{ color: 'var(--text-muted)' }}>Register as Admin</Link>
+            </div>
         </div>
     );
 };
