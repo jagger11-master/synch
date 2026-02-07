@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import api from '../../services/api';
+import apiClient from '../../api/client';
 import ErrorMessage from '../common/ErrorMessage';
 import Loader from '../common/Loader';
 
@@ -33,7 +33,7 @@ const Signup = () => {
         try {
             // Note: Updated backend to accept confirmPassword or we filter it out here. 
             // Previous fix added confirmPassword to payload, so we send it all.
-            await api.post('/auth/signup', formData);
+            await apiClient.post('/auth/signup', formData);
             navigate('/verify-otp', { state: { email: formData.email } });
         } catch (err) {
             setError(err.response?.data?.error || 'Registration failed.');

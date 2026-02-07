@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import axiosClient from '../api/axiosClient';
+import apiClient from '../api/client';
 import Navbar from '../components/common/Navbar';
 import Footer from '../components/common/Footer';
 
@@ -37,7 +37,7 @@ const AdminSignup = () => {
         setLoading(true);
 
         try {
-            await axiosClient.post('/auth/admin/signup', {
+            await apiClient.post('/auth/admin/signup', {
                 username: formData.username,
                 email: formData.email,
                 password: formData.password,
