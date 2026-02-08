@@ -41,6 +41,7 @@ const AdminSignup = () => {
                 username: formData.username,
                 email: formData.email,
                 password: formData.password,
+                confirmPassword: formData.confirmPassword,
                 adminSecret: formData.adminSecret
             });
             navigate('/verify-otp', { state: { email: formData.email } });
