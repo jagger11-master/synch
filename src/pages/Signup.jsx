@@ -110,6 +110,9 @@ const Signup = () => {
                 <p className="text-center" style={{ marginTop: '1.5rem' }}>
                     Already have an account? <Link to="/login" style={{ color: 'var(--red-primary)' }}>Login</Link>
                 </p>
+                <p className="text-center" style={{ marginTop: '0.5rem', fontSize: '0.9rem' }}>
+                    Store Owner? <Link to="/admin-signup" style={{ color: '#666' }}>Register here</Link>
+                </p>
             </div>
         </div>
     );
